@@ -1,50 +1,50 @@
 <h1>Test</h1>
 <ul>
-  <h2>**AX8 Integration**</h2>
+  <h4>**AX8 Integration**</h4>
 <li>Reintroduced the Flir AX8 to ViperVision but now with much more functionality. Nearly all functionality is supported. Still need settings for the thermal/visible alignment and turning on/off the lamp.</li>
 
-  <h2>**Streaming Format Setting**</h2>
+  <h4>**Streaming Format Setting**</h4>
 <li>Added a setting for the camera's streaming format. For the new Flir cameras, this would allow the user to stream only the thermal image if they didn't want to stream the visible image.</li>
 
-**P/T Auto Patrol Dropdown**
-Changed the P/T Auto patrol toggle switch to a dropdown with more options. You can now turn auto patrol for the selected P/T or for all connected P/Ts.
+<h4>**P/T Auto Patrol Dropdown**</h4>
+<li>Changed the P/T Auto patrol toggle switch to a dropdown with more options. You can now turn auto patrol for the selected P/T or for all connected P/Ts.</li>
 
-**Preset Config Loading Process**
-When loading a recipe after the P/T reaches a preset, the settings will load for the P/T's linked cameras independently of the others. This way, if you have two P/Ts and two cameras that are linked, when P/T 1 reaches a specific preset you can load ROIs for camera 1 only. This is useful if P/T 2 is still trying to reach its destination and not ready to load ROIs on camera 2 yet or if P/T has more stops than P/T 1. If there are no linked cameras for that P/T, the recipe will be loaded for all cameras.
+<h4>**Preset Config Loading Process**</h4>
+<li>When loading a recipe after the P/T reaches a preset, the settings will load for the P/T's linked cameras independently of the others. This way, if you have two P/Ts and two cameras that are linked, when P/T 1 reaches a specific preset you can load ROIs for camera 1 only. This is useful if P/T 2 is still trying to reach its destination and not ready to load ROIs on camera 2 yet or if P/T has more stops than P/T 1. If there are no linked cameras for that P/T, the recipe will be loaded for all cameras.</li>
 
-**Flir Atlas x64 Update**
-Includes the newest SDK update from Flir (currently only available for x64).
+<h4>**Flir Atlas x64 Update**</h4>
+<li>Includes the newest SDK update from Flir (currently only available for x64).</li>
 
-**Manual Update**
-Included the newest edition of the Configuration Guide with updated info for the pan/tilt sections.
+<h4>**Manual Update**</h4>
+<li>Included the newest edition of the Configuration Guide with updated info for the pan/tilt sections.</li>
 
-**(Bug) PIP Mouse Coordinates**
-Fixed the issue of the mouse coordinates not translating to the image coordinates correctly when using PIP Thermal or PIP Visible.
+<h4>**(Bug) PIP Mouse Coordinates**</h4>
+<li>Fixed the issue of the mouse coordinates not translating to the image coordinates correctly when using PIP Thermal or PIP Visible.</li>
 
-**(Bug) Timelapse Unit Setting**
-Fixed the issue where the timelapse unit setting was not working.
+<h4>**(Bug) Timelapse Unit Setting**</h4>
+<li>Fixed the issue where the timelapse unit setting was not working.</li>
 
-**(Bug) Preset Load Config Setting**
-Fixed the issue where the recipe name does not show up in the preset menu when editing the preset.
+<h4>**(Bug) Preset Load Config Setting**</h4>
+<li>Fixed the issue where the recipe name does not show up in the preset menu when editing the preset.</li>
 
-**(Bug) P/T Control Reset Auto Patrol Toggle**
-Fixed the issue of the auto patrol toggle not reflecting the right setting when you change the selected P/T.
+<h4>**(Bug) P/T Control Reset Auto Patrol Toggle**</h4>
+<li>Fixed the issue of the auto patrol toggle not reflecting the right setting when you change the selected P/T.</li>
 
-**(Bug) Snapshot Frequency Dual Camera**
-Fixed the bug where snapshot frequency did not work for cameras with dual detectors.
+<h4>**(Bug) Snapshot Frequency Dual Camera**</h4>
+<li>Fixed the bug where snapshot frequency did not work for cameras with dual detectors.</li>
 
-**(Bug) Emailing Can Cause Crash**
-Fixed the bug where sending an email can cause the software to crash.
+<h4>**(Bug) Emailing Can Cause Crash**</h4>
+<li>Fixed the bug where sending an email can cause the software to crash.</li>
 
-**(Bug) Restart Button Increases Frequency Of Camera Issue**
-Fixed the issue where using the restart button causes the camera "power cycle" issue to occur more frequently.
+<h4>**(Bug) Restart Button Increases Frequency Of Camera Issue**</h4>
+<li>Fixed the issue where using the restart button causes the camera "power cycle" issue to occur more frequently.</li>
 
-**(Bug) ICI Core Body Temperature Reading**
-Fixed the bug where things in the background would affect this reading.
+<h4>**(Bug) ICI Core Body Temperature Reading**</h4>
+<li>Fixed the bug where things in the background would affect this reading.</li>
 
-**(Bug) ICI Hot/Cold Spot ROI Indicator**
-Fixed the bug where these indicators were backward.
+<h4>**(Bug) ICI Hot/Cold Spot ROI Indicator**</h4>
+<li>Fixed the bug where these indicators were backward.</li>
 
-  <h2>**(Bug) ICI Flying Spot Wrong Temperature**</h2>
+  <h4>**(Bug) ICI Flying Spot Wrong Temperature**</h4>
   <li>Fixed the bug where the temperature data for the flying spot was wrong.</li>
 </ul>
