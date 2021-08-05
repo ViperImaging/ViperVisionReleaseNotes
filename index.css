@@ -10,13 +10,13 @@ body {
 }
 h1 {
   font-size: 3em;
-  color: #b21e27;
+  color: #B21E27;
   margin: auto;
 }
     
 h2 {
   font-size: 2em;
-  color: #9F101C;
+  color: #B21E27;
   margin-left: 1em;
   text-decoration: underline;
   align-self: baseline;
@@ -48,7 +48,7 @@ i.fa-plus {
 
 i.fa-minus {
   font-size: 2em;
-  color:  #9F101C;
+  color:  #B21E27;
 }
 
 i:hover {
