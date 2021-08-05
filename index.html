@@ -463,6 +463,126 @@
                     <li>Changed the layout of the .csv report to meet Emitted's preferred structure.</li>
                 </ul>
             </div>
+	    <div id="3.8.21.34">
+                <div class="align"><i id="i9" class="fa fa-minus" onclick="makeLittle('collapse-9', 'i9')" aria-hidden="true"></i><h2>ViperVision3.8.21.34</h2></div>
+                <ul id="collapse-9" class="active" style="display: block;">
+                    <h3>(Bug) Pan/Tilt Jittering</h3>
+                    <li>There is a weird jittering effect when you stopped moving the P/T sometimes. This seems to happen when the command to move is sent with 0 pan and 0 tilt speeds. We made it so after the 0 pan and 0 tilt command is sent 5 consecutive times, it doesn't send it anymore.</li>
+        
+                    <h3>(Bug) Axis Freeze</h3>
+                    <li>After a while, the Axis camera can stop streaming. We can now detect this and restart the stream.</li>
+                </ul>
+            </div>
+	    <div id="3.8.21.33">
+                <div class="align"><i id="i9" class="fa fa-minus" onclick="makeLittle('collapse-9', 'i9')" aria-hidden="true"></i><h2>ViperVision3.8.21.33</h2></div>
+                <ul id="collapse-9" class="active" style="display: block;">
+                    <h3>New Axis Stream</h3>
+                    <li>Now using VLC library to stream the Axis camera. This offloads the processing to the GPU and doesn't prevent the Flir A400/A700 from working properly when run at the same time. No longer need the Axis Media Control SDK. Will need to find a way to make recordings with this new streaming format.</li>
+        
+                    <h3>Range Selections</h3>
+                    <li>After a recent Atlas 7 update, our previous workaround for the ranges no longer worked. They only fixed the issue in the 32 bit version of Atlas. So the temperatures don't show correctly in 64 bit version.</li>
+					
+		    <h3>New Camera Sensor Temperature</h3>
+                    <li>Now getting the sensor temperature for the new A400/A500/A700 cameras.</li>
+        
+                    <h3>Updated Atlas 7</h3>
+                    <li>Has the newest version of Atlas 7.</li>
+        
+                    <h3>(Bug) Pan/Tilt Joystick</h3>
+                    <li>There was an issue with the joystick causing it to not work. That is now fixed.</li>
+        
+                    <h3>(Bug) Axis Camera Blocks Flir Camera</h3>
+                    <li>Discovering an Axis camera causes the Flir to not show up in the available cameras list.</li>
+        
+                    <h3>(Bug) Web Page Not Working</h3>
+                    <li>We made some changes to the WCF interface which caused the web page to stop working. Fixed that.</li>
+                </ul>
+            </div>
+	    <div id="3.8.21.32">
+                <div class="align"><i id="i9" class="fa fa-minus" onclick="makeLittle('collapse-9', 'i9')" aria-hidden="true"></i><h2>ViperVision3.8.21.32</h2></div>
+                <ul id="collapse-9" class="active" style="display: block;">
+                    <h3>(Bug) A315 Support</h3>
+                    <li>Some issues started for A315 in Atlas 7. Fixed those issues.</li>
+        
+                    <h3>(Bug) A655sc Support</h3>
+                    <li>The A655sc can now work with ViperVision.</li>
+                </ul>
+            </div>
+	    <div id="3.8.21.31">
+                <div class="align"><i id="i9" class="fa fa-minus" onclick="makeLittle('collapse-9', 'i9')" aria-hidden="true"></i><h2>ViperVision3.8.21.31</h2></div>
+                <ul id="collapse-9" class="active" style="display: block;">
+                    <h3>Thermal Face Detection</h3>
+                    <li>First build to include thermal face detection.</li>
+        
+                    <h3>Xenics Camera Functionality</h3>
+                    <li>Can now draw ROIs on the Serval and create Analysis & Process. Can also use the iron palette.</li>
+					
+		    <h3>Axis Camera Optical Zoom</h3>
+                    <li>Now have the ability to control the Axis camera's optical zoom.</li>
+        
+                    <h3>Axis Camera Focus</h3>
+                    <li>Now have the ability to focus the Axis camera.</li>
+        
+                    <h3>Temperature Array To WCF Interface</h3>
+                    <li>Modified the WCF interface so the camera's temperature array could be accessed by a connected app.</li>
+        
+                    <h3>New Kiosk LED Control</h3>
+                    <li>Now have the ability to control the new kiosk's LEDs. These are synced up to resemble the colors of the EBT scans. Can also control the LEDs for face illumination.</li>
+        
+                    <h3>New Kiosk Printer</h3>
+                    <li>Now have the ability to print from the new kiosk printer.</li>
+        
+                    <h3>Atlas 6 Build</h3>
+                    <li>Built an Atlas 6 version for the A315 cameras.</li>
+                </ul>
+            </div>
+	    <div id="3.7.20.30">
+                <div class="align"><i id="i9" class="fa fa-minus" onclick="makeLittle('collapse-9', 'i9')" aria-hidden="true"></i><h2>ViperVision3.7.20.30</h2></div>
+                <ul id="collapse-9" class="active" style="display: block;">
+                    <h3>AST Camera Streaming</h3>
+                    <li>The AST camera is now working in 3.0.</li>
+        
+                    <h3>AST Camera Draw ROIs</h3>
+                    <li>Can draw spot, line, rectangle, and ellipse ROIs.</li>
+					
+		    <h3>Center X & Y Analysis</h3>
+                    <li>Can now output the center point for ROIs.</li>
+        
+                    <h3>Pipe Detection Functionality.</h3>
+                    <li>Added in the Grant Pride Co pipe detection functionality into 3.0 finally.</li>
+        
+                    <h3>Turn Off A500 Flir Overlay</h3>
+                    <li>The A500 cameras have an overlay that must be turned off every time the camera is connected.</li>
+        
+                    <h3>32 Bit Build</h3>
+                    <li>Had to build a 32 bit version only for AST camera support.</li>
+                </ul>
+            </div>
+	    <div id="3.7.19.29">
+                <div class="align"><i id="i9" class="fa fa-minus" onclick="makeLittle('collapse-9', 'i9')" aria-hidden="true"></i><h2>ViperVision3.7.19.29</h2></div>
+                <ul id="collapse-9" class="active" style="display: block;">
+                    <h3>Access Control</h3>
+                    <li>Support for HID card scanner and Wiegand output via Arduino.</li>
+        
+                    <h3>A500 Support</h3>
+                    <li>Made changes so the A500 would display ROIs on the visible image correctly.</li>
+					
+		    <h3>Quiet Flir Device Drivers Install</h3>
+                    <li>Made it so the Device Drivers installer would be installed quietly. This means ViperVision can now also be installed quietly.</li>
+        
+                    <h3>VCRedist 2015, 2017, 2019</h3>
+                    <li>Added new VC++ redistributable to the installer for 64-bit support.</li>
+        
+                    <h3>Size of eye ROI</h3>
+                    <li>The eye ROI is now 10% smaller.</li>
+        
+                    <h3>EBT Pass/Fail Indicator On Webpage</h3>
+                    <li>There is now a small circle on the webpage thermal image indicating the EBT status.</li>
+					
+		    <h3>(Bug) Rotation</h3>
+                    <li>Sometimes camera rotation does not work correctly. This can potentially mess up the ROIs.</li>
+                </ul>
+            </div>
         </div>
     </div>
 	<script type="text/javascript">
