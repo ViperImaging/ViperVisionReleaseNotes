@@ -82,7 +82,7 @@
             </div>
             <div id="4.2.6.8">
                 <div class="align"><i id="i23" class="fa fa-plus" onclick="makeLittle('collapse-23', 'i23')" aria-hidden="true"></i><h2>ViperVision4.2.6.8</h2></div>
-                <ul id="collapse-23" class="inactive" style="display: block;">
+                <ul id="collapse-23" class="inactive">
                     <h3>JumpList</h3>
                     <li>Now there is a "JumpList" available when right-clicking on the icon in the taskbar. The features currently available are: 
                         minimize software, maximize software (this helps when software gets stuck in the taskbar), 
@@ -621,7 +621,7 @@
                     <li>When you upgrade from 32 bit to 64 bit or vice versa, the desktop icons no longer disappear.</li>
                 </ul>
             </div>
-		<div id="3.6.17.27">
+	    <div id="3.6.17.27">
                 <div class="align"><i id="i7" class="fa fa-plus" onclick="makeLittle('collapse-7', 'i7')" aria-hidden="true"></i><h2>ViperVision3.6.17.27</h2></div>
                 <ul id="collapse-7" class="inactive">
                     <h3>Camera DO</h3>
@@ -641,6 +641,34 @@
         
                     <h3>(Bug) Splash Page Memory Leak</h3>
                     <li>Fixed the memory leak in the splash page.</li>
+                </ul>
+            </div>
+	    <div id="3.6.16.26">
+                <div class="align"><i id="i6" class="fa fa-plus" onclick="makeLittle('collapse-6', 'i6')" aria-hidden="true"></i><h2>ViperVision3.6.16.26</h2></div>
+                <ul id="collapse-6" class="inactive">
+                    <h3>Pixels Over Percentage</h3>
+                    <li>Can now alarm when a certain % of ROI is over a certain temperature. Can also feed out the percentage of pixels in ROI over a certain temperature.</li>
+        
+                    <h3>EBT Dymo Printing</h3>
+                    <li>Can now print out tickets for users who passed the EBT scan.</li>
+					
+		    <h3>DI To OPC Tag</h3>
+                    <li>Oxea needed a feature where a Digital Input can be sent directly to an OPC tag.</li>
+        
+                    <h3>Prompt User To Load Backup</h3>
+                    <li>If the config file is in a corrupt state, ask the user if they want to load from a backup file. Then let them choose which file to load.</li>
+        
+                    <h3>Hide Unhandled and Thread Exceptions</h3>
+                    <li>Only log these exceptions in the log file. Nop longer displaying on the screen.</li>
+        
+                    <h3>(Bug) Double EBT ROIs</h3>
+                    <li>The delay that had to be put in place for drawing ROIs on the G300a in Atlas 7, had a side effect which resulted in the MeasurementCollectionAdded and MeasurementCollectionRemoved events being wired up prematurely when EBT mode was on. This resulted in two face ROIs being drawn.</li>
+			
+		    <h3>(Bug) Image Cut Off</h3>
+                    <li>Fixed the bug of the images getting cut off when the size of their control is small.</li>
+			
+		    <h3>(Bug) Manually Toggling Allen-Bradley Issue</h3>
+                    <li>When you manually toggle an Allen-Bradley tag, it no longer properly recognizes state change from PLC side.</li>
                 </ul>
             </div>
         </div>
