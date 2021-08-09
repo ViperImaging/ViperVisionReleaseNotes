@@ -697,6 +697,34 @@
                     <li>Fixed issues related to rotating the image of older cameras such as A35/65 with Atlas 7.</li>
                 </ul>
             </div>
+	    <div id="3.5.13.23">
+                <div class="align"><i id="i3" class="fa fa-plus" onclick="makeLittle('collapse-3', 'i3')" aria-hidden="true"></i><h2>ViperVision3.5.13.23</h2></div>
+                <ul id="collapse-3" class="inactive">
+                    <h3>Polygon Improvements</h3>
+                    <li>Editing a Polygon's points is much easier now. Just click on the point and move your mouse and the point will follow the mouse easily. We are also now drawing the Polygon ROI with antialiasing so it looks better on the screen.</li>
+        
+                    <h3>Range Workaround For A400/A700</h3>
+                    <li>This is in place while Flir fixes the range bug in the SDK.</li>
+					
+		    <h3>EBT Vertical Monitor Support</h3>
+                    <li>Make it so when the display is in portrait mode, the EBT control can be loaded above or below the images.</li>
+			
+		    <h3>Moved Database File To ProgramData Folder</h3>
+                    <li>The database file was being created in the ProgramFiles folder. Moving it to the ProgramData folder because that is a safe location and does not require admin privileges to use.</li>
+        
+                    <h3>Turned Auto Patrol On By Default</h3>
+                    <li>Made it so auto patrol would turn on after startup.</li>
+					
+		    <h3>Preset Name As Part Number</h3>
+                    <li>Made it so the P/T preset name would be used as a part number when Modified Subfolder is turned on.</li>
+			
+		    <h3>ROI Creation Delay</h3>
+                    <li>There appears to be a bug in the SDK where the MeasurementCollectionRemoved event fires just after adding an ROI to the thermal image during startup. Added a delay of 5 seconds after starting up before creating saved ROIs.</li>
+					
+		    <h3>(Bug) Updated Web Server App.Config</h3>
+                    <li>Web server changed Infragistics version number recently without us knowing. Fixed that.</li>
+                </ul>
+            </div>
         </div>
     </div>
 	<script type="text/javascript">
