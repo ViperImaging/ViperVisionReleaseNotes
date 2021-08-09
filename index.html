@@ -684,6 +684,19 @@
                     <li>Something could result in the camera emissivity being set to zero when loading a recipe.</li>
                 </ul>
             </div>
+	    <div id="3.5.14.24">
+                <div class="align"><i id="i4" class="fa fa-plus" onclick="makeLittle('collapse-4', 'i4')" aria-hidden="true"></i><h2>ViperVision3.5.14.24</h2></div>
+                <ul id="collapse-4" class="inactive">
+                    <h3>Better Recipe Handling</h3>
+                    <li>When loading recipes, only camera settings, ROIs, Analyses, and Processes are changed between config files. System no longer takes a significant amount of time reloading everything.</li>
+        
+                    <h3>(Bug) OPC Tags Not Working Right</h3>
+                    <li>String and Int type OPC tags have not been working properly since 3.0 where we updated the OPC server.</li>
+					
+		    <h3>(Bug) Rotation With Older Cameras</h3>
+                    <li>Fixed issues related to rotating the image of older cameras such as A35/65 with Atlas 7.</li>
+                </ul>
+            </div>
         </div>
     </div>
 	<script type="text/javascript">
