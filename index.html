@@ -725,6 +725,40 @@
                     <li>Web server changed Infragistics version number recently without us knowing. Fixed that.</li>
                 </ul>
             </div>
+	    <div id="3.5.13.22">
+                <div class="align"><i id="i2" class="fa fa-plus" onclick="makeLittle('collapse-2', 'i2')" aria-hidden="true"></i><h2>ViperVision3.5.13.22</h2></div>
+                <ul id="collapse-2" class="inactive">
+                    <h3>Face ROI Bigger</h3>
+                    <li>Increased the size of the face detection region. Now it is full image height.</li>
+        
+                    <h3>Audible EBT Instructions</h3>
+                    <li>Added audible cue to remove hat, glasses, and mask.</li>
+					
+		    <h3>Remove Light Control Temperature</h3>
+                    <li>Added option to remove temperature value from the EBT light control.</li>
+					
+		    <h3>Emitter ROI Snap</h3>
+                    <li>Added button to automatically align the emitter ROI to the emitter. We are saying this Is currently in beta and may need refined.</li>
+			
+		    <h3>Visible Snapshot</h3>
+                    <li>Visible camera snapshots were only taken when sending emails, made it so they could be created throughout.</li>
+        
+                    <h3>ROI Data In Flir Tools</h3>
+                    <li>Turned on ROI settings so min, max, avg, hot spot, and cold spot data would show in Flir Tools for snapshots created in ViperVision.</li>
+					
+		    <h3>(Bug) Nonadjustable Full Size ROI</h3>
+                    <li>Fixed an issue which caused an ROIs dimensions to lock if it were full height and/or full width.</li>
+			
+		    <h3>(Bug) Dual Display Arrangement</h3>
+                    <li>Dual camera display not arranging properly with EBT mode off.</li>
+					
+		    <h3>(Bug) EBT Processes Mute Audible</h3>
+                    <li>The toggle switch was not setting properly. Made it so an output does not need to be created to have audible fail</li>
+			
+		    <h3>(Bug) Pan/Tilt Camera Selection</h3>
+                    <li>Fixed issue which prevented a camera from being tied to a specific p/t.</li>
+                </ul>
+            </div>
         </div>
     </div>
 	<script type="text/javascript">
