@@ -64,9 +64,34 @@
                     <li></li>
                 </ul>
             </div>-->
+	    <div id="4.4.8.10">
+                <div class="align"><i id="i25" class="fa fa-minus" onclick="makeLittle('collapse-25', 'i25')" aria-hidden="true"></i><h2>ViperVision4.4.8.10</h2></div>
+                <ul id="collapse-25" class="active" style="display: block;">
+                    <h3>Acknowledge Alarms</h3>
+                    <li>Now the user has the option to silence all alarms for an ROI for a certain amount of time. They can also elect to cancel all processes during this time. The menu can be opened from the ROI Summary pane when the alarm becomes active. Additional work will be required to make this specific to individual analyses.</li>
+        
+                    <h3>ICI SWIR Integration</h3>
+                    <li>It is now possible to connect the ICI SWIR camera in ViperVision.</li>
+        
+                    <h3>Physical AI & DI To Modbus Register</h3>
+                    <li>Can now receive an AI or DI from an Adam module and feed it out through the Modbus server.</li>
+        
+                    <h3>P/T Tours & Timelapse</h3>
+                    <li>Made it so when pan tilts and timelapse are used together, a snapshot will be taken at each P/T stop when the timelapse interval has expired.</li>
+			
+		    <h3>(Bug) Range Not Always Setting</h3>
+                    <li>Fixed the issue where the camera range was not always being applied properly.</li>
+			
+		    <h3>(Bug) CSV ROI Avg Temperature Labe</h3>
+                    <li>Fixed the issue where the ROI's average temperature was labeled as Min in the CSV report.</li>
+		
+		    <h3>(Bug) Flir Handheld Not Working With 4.0</h3>
+                    <li>Fixed the issue where the Flir portable cameras were not working since 4.0.</li>
+                </ul>
+            </div>
 	    <div id="4.3.7.9">
-                <div class="align"><i id="i24" class="fa fa-minus" onclick="makeLittle('collapse-24', 'i24')" aria-hidden="true"></i><h2>ViperVision4.3.7.9</h2></div>
-                <ul id="collapse-24" class="active" style="display: block;">
+                <div class="align"><i id="i24" class="fa fa-plus" onclick="makeLittle('collapse-24', 'i24')" aria-hidden="true"></i><h2>ViperVision4.3.7.9</h2></div>
+                <ul id="collapse-24" class="inactive">
                     <h3>Charting Improvements</h3>
                     <li>Now using a different control for charting data to prevent freezing and reduce system resources usage. The user now also has the ability to choose the data series color.</li>
         
