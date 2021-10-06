@@ -18,13 +18,23 @@
                 <ul id="collapse-27" class="active" style="display: block;">
                     <h3>Web Server Runas Admin</h3>
                     <li>No longer need to run as admin to get the web server working.</li>
+			
+		    <h3>Updated Atlas</h3>
+		    <li>Updated the Flir SDK. New version is meant to solve the RTSP crashing issue when streaming the new cameras in thermal mode.</li>
+
         
                     <h3>(Bug) Camera Dispose Delay</h3>
                     <li>Found a bug in Atlas that causes the camera's RTSP server to crash if disposing is started and not finished properly. Added a delay after disposing of the camera to prevent the RTSP servers from crashing.</li>
         
                     <h3>(Bug) Flir Camera Discovery</h3>
                     <li>Re-starting the Flir camera discovery every 30 seconds was causing an access violation in Atlas which resulted in ViperVision crashing. Took out the restart timer. Until a permanent fix is implemented for this, camera discovery may not find all available cameras.</li>
-                </ul>
+                    
+		    <h3>(Bug) Hiding To System Tray</h3>
+		    <li>Fixed the issue where camera data stops coming through when the software is minimized to the system tray.</li>
+
+		    <h3>(Bug) Recording Freeze</h3>
+                    <li>Fixed the issue where saving videos back-to-back could cause a deadlock.</li>
+		 </ul>
             </div>
             <div id="4.4.8.11">
                 <div class="align"><i id="i26" class="fa fa-plus" onclick="makeLittle('collapse-26', 'i26')" aria-hidden="true"></i><h2>ViperVision4.4.8.11</h2></div>
