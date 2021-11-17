@@ -13,9 +13,22 @@
             <h1 id="title">ViperVision Software Notes</h1>
         </div>
         <div class="content">
+		<div id="4.5.9.15">
+			<div class="align"><i id="i30" class="fa fa-minus" onclick="makeLittle('collapse-30', 'i30')" aria-hidden="true"></i><h2>ViperVision4.5.9.15</h2></div>
+			<ul id="collapse-30" class="active" style="display: block;">
+				<h3>Finished New Camera Discovery</h3>
+				<li>Optimized the use of the new Flir Scanner classes. Now adding and deleting cameras is more stable. Also, updating the available cameras list more accurately.</li>
+
+				<h3>(Bug) P/T Config Swapping Bug</h3>
+				<li>Fixed a bug where P/T config swapping can cause Atlas errors after some time. This resulted in the software crashing.</li>
+
+				<h3>(Bug) Camera Sensor Temperature Output</h3>
+				<li>Fixed the bug which was preventing the camera's sensor temperature from being fed out to external devices properly.</li>
+			</ul>
+		</div>
 	    <div id="4.5.9.14">
-                <div class="align"><i id="i29" class="fa fa-minus" onclick="makeLittle('collapse-29', 'i29')" aria-hidden="true"></i><h2>ViperVision4.5.9.14</h2></div>
-                <ul id="collapse-29" class="active" style="display: block;">
+                <div class="align"><i id="i29" class="fa fa-plus" onclick="makeLittle('collapse-29', 'i29')" aria-hidden="true"></i><h2>ViperVision4.5.9.14</h2></div>
+                <ul id="collapse-29" class="inactive">
 			<h3>(Bug) Flir GigE Vision Exclusive Lock</h3>
 			<li>
 			    Some recent code was resulting in CameraDeviceInfo to be created for a single camera multiple times. This causes an exclusive lock error to fire 
