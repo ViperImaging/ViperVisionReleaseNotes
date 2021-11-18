@@ -13,9 +13,34 @@
             <h1 id="title">ViperVision Software Notes</h1>
         </div>
         <div class="content">
+		<div id="4.6.10.16">
+			<div class="align"><i id="i31" class="fa fa-minus" onclick="makeLittle('collapse-31', 'i31')" aria-hidden="true"></i><h2>ViperVision4.6.10.16</h2></div>
+			<ul id="collapse-31" class="active" style="display: block;">
+				<h3>Gauges</h3>
+				<li>A new feature to help users visualize data easier. The user can create a unique gauge for each ROI data point they want to monitor. They can select thresholds and colors so the operators can quickly see how close an ROI is to alarming. This feature is unlocked with the Max license.</li>
+
+				<h3>P/T Control Logout</h3>
+				<li>The P/T control is no longer useable when logged out or if the user does not have the appropriate permissions</li>
+
+				<h3>P/T Auto Patrol Stop Analysis</h3>
+				<li>Now, when a P/T is in auto patrol and moving, analyses are disabled until the P/T reaches its next preset, then they are enabled again. If no camera is linked to the P/T, all analyses are disabled, otherwise, only the linked camera's analyses are disabled. Eventually, we will need to add considerations for whether or not the analysis was enabled to begin with, and if the user even wants to disable them while moving. For some applications, you may want analyses to work while the P/T is in auto patrol mode.</li>
+
+				<h3>(Bug) Deleting Disconnected Camera</h3>
+				<li>Fixed the bug where deleting a camera that is not connected can crash the software.</li>
+
+				<h3>(Bug) OPC Config Loading</h3>
+				<li>Fixed the issue where loading a saved configuration (either manually, via external input, or from P/T auto patrol), if the OPC tags are different, the new tags from the previous config remain and the tags for the newly loaded config are not brought back.</li>
+
+				<h3>(Bug) P/T Auto Patrol On Startup</h3>
+				<li>Fixed the bug where the last auto patrol state of the P/T does not remain after a restart.</li>
+
+				<h3>(Bug) ROI Camera DO Process Setting</h3>
+				<li>Fixed the issue where if you set up a process to trigger one of the camera digital outputs, then return to the settings menu, the DO is not selected in the dropdown.</li>
+			</ul>
+		</div>
 		<div id="4.5.9.15">
-			<div class="align"><i id="i30" class="fa fa-minus" onclick="makeLittle('collapse-30', 'i30')" aria-hidden="true"></i><h2>ViperVision4.5.9.15</h2></div>
-			<ul id="collapse-30" class="active" style="display: block;">
+			<div class="align"><i id="i30" class="fa fa-plus" onclick="makeLittle('collapse-30', 'i30')" aria-hidden="true"></i><h2>ViperVision4.5.9.15</h2></div>
+			<ul id="collapse-30" class="inactive">
 				<h3>Finished New Camera Discovery</h3>
 				<li>Optimized the use of the new Flir Scanner classes. Now adding and deleting cameras is more stable. Also, updating the available cameras list more accurately.</li>
 
