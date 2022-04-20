@@ -13,8 +13,30 @@
             <h1 id="title">ViperVision Software Notes</h1>
         </div>
         <div class="content">
-		<!--<div id="4.7.14.21">
-		    <div class="align"><i id="i36" class="fa fa-minus" onclick="makeLittle('collapse-36', 'i36')" aria-hidden="true"></i><h2>ViperVision4.7.14.21</h2></div>
+		<div id="4.7.16.22">
+		    <!--<div class="align"><i id="i37" class="fa fa-minus" onclick="makeLittle('collapse-37', 'i37')" aria-hidden="true"></i><h2>ViperVision4.7.16.22</h2></div>
+		    <ul id="collapse-37" class="active" style="display: block;">
+			**Rate Of Change Modification**
+			The user now has the option of calculating the ROC during the time interval instead of only at the end of the interval.
+
+			**(Bug) Modbus Server Heartbeat**
+			Fixed the bug related to using a Modbus server input contact as the system's heartbeat.
+
+			**(Bug) ROI Summary & IO Grid Performance & Errors**
+			Made changes to the grid controls used in the ROI and IO tool window UI elements to improve their performance. This also fixed an issue that caused many errors being written to the log file at startup or when an IO device was connected/disconnected.
+
+			**(Bug) Arduino Connection**
+			Revisited the EBT and Access Control Arduino connections to make them more reliable.
+
+			**(Bug) Dock Panel Camera Selection**
+			Fixed the issue where after restarting, clicking on a camera other than camera 1, does not select it.
+
+			**(Bug) Dock Panel Duplicate Tool Windows**
+			Fixed the issue where some sequence of events can cause the Modbus & OPC server tool windows to duplicate.
+		    </ul>
+		</div>-->
+		<div id="4.7.15.21">
+		    <div class="align"><i id="i36" class="fa fa-minus" onclick="makeLittle('collapse-36', 'i36')" aria-hidden="true"></i><h2>ViperVision4.7.15.21</h2></div>
 		    <ul id="collapse-36" class="active" style="display: block;">
 			<h3>Main Form Replacement</h3>
 			<li>The home screen's form has been replaced to utilize the Windows snap features and the curved corners feature in Windows 11.</li>
@@ -24,11 +46,13 @@
 			<li>Fixed the issue where clicking and holding on a camera display then moving your mouse up above the display's header, causes the display window to pop out of the dock control. This bug was fixed as a result of the dock panel replacement.</li>
 			<h3>(Bug) Configuration Load From Ctrl Comm</h3>
 			<li>Fixed the issue of config loading not working with ctrl comm tags.</li>
+			<h3>(Bug) Arduino Connection Modifications</h3>
+			<li>Changed the Arduino access control code to handle disconnects better.</li>
 		    </ul>
-		</div>-->
+		</div>
 		<div id="4.7.14.20">
-		    <div class="align"><i id="i35" class="fa fa-minus" onclick="makeLittle('collapse-35', 'i35')" aria-hidden="true"></i><h2>ViperVision4.7.14.20</h2></div>
-		    <ul id="collapse-35" class="active" style="display: block;">
+		    <div class="align"><i id="i35" class="fa fa-plus" onclick="makeLittle('collapse-35', 'i35')" aria-hidden="true"></i><h2>ViperVision4.7.14.20</h2></div>
+		    <ul id="collapse-35" class="inactive">
 			<h3>Viewer UI Update</h3>
 			<li>Updated the display that's used for editing thermal .jpg and .seq files.</li>
 			<h3>(Bug) Report Not Working With Visible Camera</h3>
