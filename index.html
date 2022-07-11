@@ -13,9 +13,62 @@
             <h1 id="title">ViperVision Software Notes</h1>
         </div>
         <div class="content">
+		<div id="4.7.16.24">
+			<div class="align"><i id="i39" class="fa fa-minus" onclick="makeLittle('collapse-39', 'i39')" aria-hidden="true"></i><h2>ViperVision4.7.16.24</h2></div>
+		    	<ul id="collapse-39" class="active" style="display:block">
+				<h3>(Bug) Adam Module DIO On Restart</h3>
+				<li>Fixed the issue where the DIO channels being true at software shutdown or restart will result in them remaining true once the software comes back up even if they have since gone false. Now, we reset all DIO channels to false on startup and the state change is processed when the next read is performed.</li>
+
+				<h3>(Bug) Allen-Bradley Wrong Tag Type (Integer)</h3>
+				<li>When the user sets up an integer tag and tries to write a double value to it, errors occur. Now, we convert the value to an integer and write it. So, if the value is 30.47, what gets written to the PLC is 30. This makes it possible for them to use the smaller INT rather than REAL if they want to. It's still recommended to use REAL if they want the decimal though.</li>
+			</ul>
+		</div>
+		<div id="4.7.16.23">
+		    <div class="align"><i id="i38" class="fa fa-plus" onclick="makeLittle('collapse-38', 'i38')" aria-hidden="true"></i><h2>ViperVision4.7.16.23</h2></div>
+		    <ul id="collapse-38" class="inactive">
+		    	<h3>Update Atlas SDK</h3>
+		    	<li>Updated to the newest version of Atlas SDK which has a fix for bad scan lines in it.</li>
+
+		    	<h3>Email Reports</h3>
+		    	<li>New feature to email any report from ROI process.</li>
+
+		    	<h3>Default Email Host & Port</h3>
+		   	<li>Changed the default host name and port number to Outlook as Gmail stopped support for SMTP from third party apps.</li>
+
+		    	<h3>Email Allow Attachments Option</h3>
+			<li>The old email setting "Attach snapshot" is now called "Allow attachment". When an email is sent from an ROI process or channel process, attachments can be included only if this is true.</li>
+
+			<h3>(Bug) SetInputRegisterValue NaN</h3>
+			<li>Fixed an issue where a value of NaN being written to a Modbus server register throws an error.</li>
+
+			<h3>(Bug) Missing Comas In CSV</h3>
+			<li>Fixed the issue of missing commas between ROI analyses in the CSV report.</li>
+
+			<h3>(Bug) Database Part Number</h3>
+			<li>Removed extra '_' from part number in SQL database.</li>
+
+			<h3>(Bug) P/T Moving After Auto Patrol Stopped</h3>
+			<li>Fixed the issue where the P/Ts try to stay aligned to their current preset when auto patrol is turned off.</li>
+
+			<h3>(Bug) Removed Download Button</h3>
+			<li>Removed the download button until we can get the server to handle downloads faster.</li>
+
+			<h3>(Bug) CSV Report Spelling</h3>
+			<li>Fixed the misspelled "Min" column in the CSV report.</li>
+
+			<h3>(Bug) Charts & Gauges Opening</h3>
+			<li>Fixed the issue where a new chart or gauge loads behind the software. Both are now treated as tool windows. Charts are docked to the bottom by default and gauges are docked to the side of the camera they are data-bound to by default.</li>
+
+			<h3>(Bug) MeasurementShape Lock</h3>
+			<li>Now locking the Atlas MeasurementShape objects when getting or setting to prevent issues with multi-threading.</li>
+
+			<h3>(Bug) Rate Of Change</h3>
+			<li>Fixed the problems with the rate of change analysis.</li>
+		    </ul>
+		</div>
 		<div id="4.7.16.22">
-		    <div class="align"><i id="i37" class="fa fa-minus" onclick="makeLittle('collapse-37', 'i37')" aria-hidden="true"></i><h2>ViperVision4.7.16.22</h2></div>
-		    <ul id="collapse-37" class="active" style="display: block;">
+		    <div class="align"><i id="i37" class="fa fa-plus" onclick="makeLittle('collapse-37', 'i37')" aria-hidden="true"></i><h2>ViperVision4.7.16.22</h2></div>
+		    <ul id="collapse-37" class="inactive">
 			<h3>Rate Of Change Modification</h3>
 			<li>The user now has the option of calculating the ROC during the time interval instead of only at the end of the interval.</li>
 			
