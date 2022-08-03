@@ -13,9 +13,38 @@
             <h1 id="title">ViperVision Software Notes</h1>
         </div>
         <div class="content">
+		<div id="4.7.16.25">
+			<div class="align"><i id="i40" class="fa fa-minus" onclick="makeLittle('collapse-40', 'i40')" aria-hidden="true"></i><h2>ViperVision4.7.16.25</h2></div>
+		    	<ul id="collapse-40" class="active" style="display:block">
+				<h3>Config File Integrity Check </h3>
+				<li>We now verify that the config is not corrupt when saving it.</li>
+				<h3>Overwrite recipe in camera context menu (not user friendly)</h3>
+				<li>The overwrite recipe in the camera-specific context menu does not always overwrite that cameras current config file; it overwrites the currently loaded config, even if that is for a different camera. We have made this more user friendly.</li>
+				<h3>(Bug) UAC & Sleep Mode Video Freeze</h3>
+				<li>Fixed bug that would cause video stream to freeze whenever UAC/SleepMode/consent.exe executed.</li>
+				<h3>Swapped out the camera context menu</h3>
+				<li>This control needed to get swapped out because it would cause the image to freeze in our new camera display control for the UAC fix. </li>
+				<h3>(Bug) Move OPC items to program data so the installer doesn't overwrite config</h3>
+				<li>New installs no longer overwrite OPC config settings. No longer need to save off setting before upgrading.</li>
+				<h3>(Bug) ROI Drawn On ICI Camera Stay Put When Zooming In/Out</h3>
+				<li>Fixed bug that caused the ROIs to zoom in with the image. Now they don't.</li>
+				<h3>(Bug) Rebooting Software Loses ICI</h3>
+				<li>Fixed bug that caused ICI cameras to not reconnect after restart</li>
+				<h3>(Bug) Multiple PLCs, when adding a tag to a camera output, the tag list does not populate correctly</h3>
+				<li>Fixed bug that would populate a dropdown tag with wrong datatype and send to an endpoint and it failed</li>
+				<h3>(Bug) Bug with drawing annulus</h3>
+				<li>Drawing annulus would cause software to crash. This is no more</li>
+				<h3>(Bug) Arduino disconnect</h3>
+				<li>Added functionality to detect arduino problems and ability of the software to reset ALL serial ports to force a reconnect to all arduinos. Added extra logging and sped up recovery process.</li>
+				<h3>(Bug) Web Server has Port conflict with intel preinstalled bloatware.</h3>
+				<li>On some machines intel graphics application will use the same port as the web server. This caused the web server to not load. Now users can set their own port number.</li>
+				<h3>(Bug) Southern Nuclear Hatch Memory Bug</h3>
+				<li>Fixed bug that caused backup files to save too frequently.</li>
+			</ul>
+		</div>
 		<div id="4.7.16.24">
-			<div class="align"><i id="i39" class="fa fa-minus" onclick="makeLittle('collapse-39', 'i39')" aria-hidden="true"></i><h2>ViperVision4.7.16.24</h2></div>
-		    	<ul id="collapse-39" class="active" style="display:block">
+			<div class="align"><i id="i39" class="fa fa-plus" onclick="makeLittle('collapse-39', 'i39')" aria-hidden="true"></i><h2>ViperVision4.7.16.24</h2></div>
+		    	<ul id="collapse-39" class="inactive">
 				<h3>(Bug) Adam Module DIO On Restart</h3>
 				<li>Fixed the issue where the DIO channels being true at software shutdown or restart will result in them remaining true once the software comes back up even if they have since gone false. Now, we reset all DIO channels to false on startup and the state change is processed when the next read is performed.</li>
 
