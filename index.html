@@ -13,6 +13,32 @@
             <h1 id="title">ViperVision Software Notes</h1>
         </div>
         <div class="content">
+		<div id="4.27.3">
+		    <div class="align">
+			<i id="i42" class="fa fa-minus" onclick="makeLittle('collapse-42', 'i42')" aria-hidden="true"></i>
+			<h2>ViperVision4.27.3</h2>
+		    </div>
+		    <ul id="collapse-42" class="active" style="display:block">
+			<h3>(Bug) Web server starting without permission)</h3>
+			<li>This is was not ideal so it is been fixed</li>
+			<h3>(Bug) A65 streaming format</h3>
+			<li>Ax5 cameras were getting set to the wrong format</li>
+			<h3>(Bug) PLC save location fail</h3>
+			<li>AB PLC - snapshots save location fails when it cant read part number. This bug has been slain</li>
+			<h3>(QoL) web service port conflicts</h3>
+			<li>This is something that can still happen, so we changed the numbers to something else and crossed fingers hoping that no one else will run into the issue. There is just no way to guess which ports will be used.</li>
+			<h3>(QoL) OPC server improvements</h3>
+			<li>We made some improvements and implemented functions to maintain the OPC server</li>
+			<h3>(Enhancement) Database optimization</h3>
+			<li>We improved the database code to get better performance</li>
+			<h3>(Enhancement) Chart Optimization</h3>
+			<li>Like the database, code was improved to increase performance</li>
+			<h3>(Enhancement) Output state option</h3>
+			<li>We added an output state option for the camera connection state feature.</li>
+			<h3>(Enhancement) Windows Notifications</h3>
+			<li>improved the quality of our windows notification system</li>
+		    </ul>
+		</div>
 		<div id="4.26.1">
 			<div class="align"><i id="i41" class="fa fa-plus" onclick="makeLittle('collapse-41', 'i41')" aria-hidden="true"></i><h2>ViperVision4.26.1</h2></div>
 		    	<ul id="collapse-41" class="inactive">
