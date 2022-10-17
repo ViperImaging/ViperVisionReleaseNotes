@@ -13,12 +13,28 @@
             <h1 id="title">ViperVision Software Notes</h1>
         </div>
         <div class="content">
+		<div id="4.28.1">
+		    <div class="align">
+			<i id="i43" class="fa fa-minus" onclick="makeLittle('collapse-43', 'i43')" aria-hidden="true"></i>
+			<h2>ViperVision4.28.1</h2>
+		    </div>
+		    <ul id="collapse-43" class="active" style="display:block">
+			<h3>(Bug) A710 connection</h3>
+			<li>A710 would not reconnect to software. This has been fixed</li>
+			<h3>(Bug) Mirror image</h3>
+			<li>Roi's were getting drawn backwards when mirror image was enabled</li>
+			<h3>(Bug) Web server notification</h3>
+			<li>Notification was returning a port number of zero. This now displays the correct port number</li>
+			<h3>(Enhancement) Pan/Tilt w/ RoC</h3>
+			<li>Optimized the pan/tilt code to when performing analysis while touring</li>
+		    </ul>
+		</div>
 		<div id="4.27.3">
 		    <div class="align">
-			<i id="i42" class="fa fa-minus" onclick="makeLittle('collapse-42', 'i42')" aria-hidden="true"></i>
+			<i id="i42" class="fa fa-plus" onclick="makeLittle('collapse-42', 'i42')" aria-hidden="true"></i>
 			<h2>ViperVision4.27.3</h2>
 		    </div>
-		    <ul id="collapse-42" class="active" style="display:block">
+		    <ul id="collapse-42" class="inactive">
 			<h3>(Bug) Web server starting without permission</h3>
 			<li>This is was not ideal so it is been fixed</li>
 			<h3>(Bug) A65 streaming format</h3>
