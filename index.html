@@ -13,10 +13,10 @@
             <h1 id="title">ViperVision Software Notes</h1>
         </div>
         <div class="content">
-		<div id="4.28.1">
+		<div id="4.28.3">
 		    <div class="align">
 			<i id="i43" class="fa fa-minus" onclick="makeLittle('collapse-43', 'i43')" aria-hidden="true"></i>
-			<h2>ViperVision4.28.1</h2>
+			<h2>ViperVision4.28.3</h2>
 		    </div>
 		    <ul id="collapse-43" class="active" style="display:block">
 			<h3>(Bug) A710 connection</h3>
@@ -25,8 +25,16 @@
 			<li>Roi's were getting drawn backwards when mirror image was enabled</li>
 			<h3>(Bug) Web server notification</h3>
 			<li>Notification was returning a port number of zero. This now displays the correct port number</li>
+			<h3>(BUG) System settings menu load scrolled down by default</h3>
+        		<li>This was a kind of jarring so now it should not happen anymore</li>
+        		<h3>(BUG) Mirrored ROI's get drawn backwards</h3>
+        		<li>If the camera display is mirrored, ROI's would move opposite of how they should</li>
 			<h3>(Enhancement) Pan/Tilt w/ RoC</h3>
 			<li>Optimized the pan/tilt code to when performing analysis while touring</li>
+			<h3>(Enhancement) Camera Engine for Flir Cameras</h3>
+        		<li>We refactored some of the code in the flir engine in order to fix a bug that would sometimes cause the software to crash</li>
+			<h3>Updated S7.Net Library</h3>
+        		<li>This allows us to communicate with siemens devices</li>
 		    </ul>
 		</div>
 		<div id="4.27.3">
