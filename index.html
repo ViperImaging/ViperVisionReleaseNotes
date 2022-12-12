@@ -13,12 +13,32 @@
             <h1 id="title">ViperVision Software Notes</h1>
         </div>
         <div class="content">
+		<div id="4.29.1">
+		    <div class="align">
+			<i id="i44" class="fa fa-minus" onclick="makeLittle('collapse-44', 'i44')" aria-hidden="true"></i>
+			<h2>ViperVision4.29.1</h2>
+		    </div>
+		    <ul id="collapse-44" class="active" style="display:block">
+			<h3>(Enhancement)Ax8 Emissivity and Transmissivity</h3>
+			<li>Can now set emissivity and transmissivity from ViperVision</li>
+			<h3>(Enhancement) Ax8 does not reconnect to software<h3>
+			<li>This bug has been resolved and now reconnects</li>
+			<h3>(Bug) Ax8 min, max, avg showing same temps</h3>
+			<li> We now send a command to the camera to fix this issue</li>
+			<h3>(Bug)Ax8 OPC Tags</h3>
+			<li>Fixed outputting OPC tags</li>
+			<h3>(QoL)Ax8 UI Elements</h3>
+			<li>Hid unused fields in the software for Ax8 camera</li>
+			<h3>(Bug)Ax8 color pallette</h3>
+			<li>Changing the color pallette on the Ax8 should now work</li>
+		    </ul>
+		</div>
 		<div id="4.28.3">
 		    <div class="align">
-			<i id="i43" class="fa fa-minus" onclick="makeLittle('collapse-43', 'i43')" aria-hidden="true"></i>
+			<i id="i43" class="fa fa-plus" onclick="makeLittle('collapse-43', 'i43')" aria-hidden="true"></i>
 			<h2>ViperVision4.28.3</h2>
 		    </div>
-		    <ul id="collapse-43" class="active" style="display:block">
+		    <ul id="collapse-43" class="inactive">
 			<h3>(Bug) A710 connection</h3>
 			<li>A710 would not reconnect to software. This has been fixed</li>
 			<h3>(Bug) Mirror image</h3>
